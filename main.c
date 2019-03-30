@@ -8,8 +8,12 @@ int main()
 {
     int sePudo;
     float respuesta;
+    int primerEdad;
+    int segundaEdad;
+    pedirEdad(&primerEdad);
+    pedirEdad(&segundaEdad);
 
-    sePudo=dividir(27,4,&respuesta);
+    sePudo=dividir(primerEdad,segundaEdad,&respuesta);
 
     if(sePudo==1)
     {
@@ -19,7 +23,7 @@ int main()
     {
         printf("\nNo se puede");
     }
-    /*int miEdad;
+    int miEdad;
     int retorno;
     retorno=pedirEdad(&miEdad);
 
@@ -30,7 +34,7 @@ int main()
     else
     {
         printf("No se pudo");
-    }*/
+    }
     /*cambiarValor(int dato);
     cambiarReferencia(int *dato);*/
 

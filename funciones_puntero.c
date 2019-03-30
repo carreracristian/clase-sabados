@@ -12,7 +12,7 @@ int dividir(int datoUno, int datoDos, float *resultado)
     return retorno;
 
 }
-/*int pedirEdad(int *edad)
+int pedirEdad(int *edad)
 {
     int aux;
     int retorno;
