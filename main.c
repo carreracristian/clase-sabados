@@ -1,33 +1,55 @@
 #include <stdio.h>
 #include <stdlib.h>
-//archivo.o codigo objeto. Traduccion a binario.
+#include "funciones_puntero.h"
+/*int cambiarValor(int dato);
+int cambiarReferencia(int *dato);*/
+
 int main()
 {
+    int sePudo;
+    float respuesta;
 
+    sePudo=dividir(27,4,&respuesta);
 
+    if(sePudo==1)
+    {
+        printf("\nLa respuesta es %.2f",respuesta);
+    }
+    else
+    {
+        printf("\nNo se puede");
+    }
+    /*int miEdad;
+    int retorno;
+    retorno=pedirEdad(&miEdad);
 
+    if(retorno==1)
+    {
+        printf("Su edad es %d",miEdad);
+    }
+    else
+    {
+        printf("No se pudo");
+    }*/
+    /*cambiarValor(int dato);
+    cambiarReferencia(int *dato);*/
 
+    /* verSiAnda();
+     int sueldo;
+      printf("\n lugar valor %d",&sueldo);
+     sueldo=10000;
+     cambiarValor(sueldo);
+     printf("\nPor valor: %d",sueldo);
+     cambiarReferencia(&sueldo);
+     printf("\nPor referencia: %d",sueldo);
 
-    /*int numero;
-    char letra;
-    char palabra[10];
-
-    printf("Ingrese una palabra: ");
-    scanf("%s",palabra);
-    setbuf(stdin, NULL);
-    printf("La palabra es: %s",palabra);
-
-    printf("Ingrese un numero: ");
-    scanf("%d",&numero);
-
-    printf("Ingrese una letra : ");
-    fflush(stdin);
-    //Para linux, setbuf(stdin,NULL);
-    scanf("%c", &letra);
-
-    printf("El numero es: %d\nLa letra es: %c",numero,letra);*/
-
-
-
-    return 0;
+     return 0;*/
 }
+/*int cambiarValor(int dato)
+{
+   dato=0;
+}
+int cambiarReferencia(int *dato)
+{
+   *dato=0;
+}*/
